@@ -37,3 +37,10 @@ const edad = [ 18, 17, 19, 16, 21, 15,22, 17, 23, 17, 25];
 //Edad maxima
 const max = edad.reduce((a,b)=>Math.max(a,b), -Infinity);
 console.log("Max:", max);//35
+
+function getAverageAge(users) {
+  return users.reduce((prev, user) => prev + user.edad, 0) 
+  / users.length;
+}
+
+console.log( getAverageAge(persona));
